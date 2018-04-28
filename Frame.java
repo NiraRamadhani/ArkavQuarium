@@ -19,7 +19,7 @@ public class Frame extends JFrame implements MouseListener, KeyListener {
   public Frame() {
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setSize(1366, 768);
-    // setExtendedState(JFrame.MAXIMIZED_BOTH);
+    setExtendedState(JFrame.MAXIMIZED_BOTH);
     setTitle("Arkavquarium");
     init();
   }
@@ -89,22 +89,22 @@ public class Frame extends JFrame implements MouseListener, KeyListener {
     mouseX = e.getX();
     mouseY = e.getY();
   }
-
+  
   /**
    * Implements method from MouseListener interface.
    */
   public void mouseReleased(MouseEvent e) {}
-
+  
   /**
    * Implements method from MouseListener interface.
    */
   public void mouseEntered(MouseEvent e) {}
-
+  
   /**
    * Implements method from MouseListener interface.
    */
   public void mouseExited(MouseEvent e) {}
-
+  
   /**
    * Implements method from MouseListener interface.
    */
@@ -118,7 +118,7 @@ public class Frame extends JFrame implements MouseListener, KeyListener {
     inputKey.add(1);
     keyChar = e.getKeyChar();
   }
-
+  
   /**
    * Implements method from KeyListener inerface.
    */
@@ -130,7 +130,7 @@ public class Frame extends JFrame implements MouseListener, KeyListener {
   public void keyTyped(KeyEvent e) {
     System.out.println(e.getKeyChar());
   }
-
+  
   /**
    * This return the input key.
    * @return inputKey
@@ -154,12 +154,12 @@ public class Frame extends JFrame implements MouseListener, KeyListener {
   public char getKeyChar() {
     return keyChar;
   }
-
+    
   private static final long serialVersionUID = 1L;
   private ArrayList<Integer> inputKey = new ArrayList<Integer>();
   private ArrayList<Integer> inputMouse = new ArrayList<Integer>();
   private int mouseX;
   private int mouseY;
-  private char keyChar;
+  private char keyChar;    
 
 }
