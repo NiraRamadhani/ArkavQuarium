@@ -1,6 +1,5 @@
 # ArkavQuarium
-My team and I try to remake Insaniquarium game.<br />
-If you want to win this game you have to buy the egg.<br />
+To win this game you have to buy the egg.<br />
 You can press X to exit, and S to save the game.<br />
 *<br />
 *<br />
